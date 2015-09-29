@@ -95,6 +95,7 @@ public class Tropicraft {
     public void init(FMLInitializationEvent event) {
 		proxy.initRenderHandlersAndIDs();
 		TCEntityRegistry.init();
+		BiomeGenTropicraft.registerBiomes();
 		proxy.initRenderRegistry();
 		MinecraftForge.EVENT_BUS.register(new TCBlockEvents());
 		MinecraftForge.EVENT_BUS.register(new TCItemEvents());
